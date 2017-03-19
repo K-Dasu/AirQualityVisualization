@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EPA</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+
+    <script type="text/javascript" src="./js/Lib/dateslider.js"></script>
+    <script type="text/javascript" src="./js/Lib/progressbar.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/css/bootstrap-slider.min.css">
+
+    <link rel="stylesheet" href="./css/master.css">
+    <script type="text/javascript" src="./js/initializeDB.js"></script>
+    <script type="text/javascript" src="./js/map.js"></script>
+    <script type="text/javascript" src="./js/statemap.js"></script>
+    <script type="text/javascript" src="./js/picker.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>United States Air Quality</h1>
+            <p>Insert brief introduction about air quality</p>
+        </div>
+        <div id="bullet" class="row">
+            <div id="question-left" class="col-lg-6">
+                <h1>What does poor air quality mean?</h1>
+                <p>
+                    The term “air quality” means the state of the air around us. We consider air quality good when it is clean, clear, and unpolluted.
+                </p>
+            </div>
+        </div>
+
+        <div id="bullet" class="row">
+            <div id="question-left" class="col-lg-6 ">
+                <h1>Health Risks</h1>
+                <div id="asthma-info"></div>
+            </div>
+            <div id="health-graphic" class="row">
+                <div class="col-lg-12">
+                    <input id="asthma-datepicker" class="slider" type="text" />
+                </div>
+                <div class="col-lg-3">
+                    <div id="asthma-container"></div>
+                </div>
+                <div class="col-lg-12">
+                    <div id="asthma-map"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="bullet" class="row">
+            <div id="question-left" class="col-lg-6">
+                <h1>Who is affected?</h1>
+            </div>
+        </div>
+
+        <div id="bullet" class="row">
+            <div id="question-left" class="col-lg-6 offset-lg-6">
+                <h1>What are we doing about it?</h1>
+            </div>
+        </div>
+
+        <div id="bullet" class="row">
+            <div id="question-left" class="col-lg-6">
+                <h1>Have we had any significant effect?</h1>
+                <div id="map-info"></div>
+            </div>
+            <div class="col-lg-12">
+                <input id="datepicker" class="slider" type="text" />
+            </div>
+            <div class="col-lg-3">
+                <div id="container"></div>
+            </div>
+            <div class="col-lg-12">
+                <div id="us-map"></div>
+            </div>
+        </div>
+
+        <div id="bullet" class="row">
+            <div id="question-left" class="col-lg-6 offset-lg-6">
+                <h1>Going forward...</h1>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script type="text/javascript" src="./js/main.js"></script>
+
+</html>
